@@ -1,0 +1,1 @@
+- https://analogdevicesinc.github.io/documentation/solutions/reference-designs/eval-cn0565-ardz/index.html

@@ -1,0 +1,1 @@
+El archivo .xlsx en esta carpeta contiene los datos previamente procesados de las mediciones realizadas en los pines utilizando la herramienta LCRmeter. El procesamiento de los datos se realizó mediante el script de python "impedance-measuree-processor"
