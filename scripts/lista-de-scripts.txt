@@ -1,3 +1,4 @@
 - pin selector
-- measure ALL
+- impedance measure processor
+- measure ALL (Este es de antonio, se encuentra en una de las carpetas en la NUC)
 - script comparador de mediciones
