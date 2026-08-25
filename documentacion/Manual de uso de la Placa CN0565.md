@@ -1,37 +1,49 @@
 # Índice
 
 1.  **Introducción y Especificaciones Técnicas** 
+	
 	1.1. Descripción corta de la CN0565
+	
 	1.2. Diagrama en bloques simplificado
+	
 	1.3. Características y jumpers P7/P1
     
 2. **Requisitos de Software y Control de Versiones**
+	
 	2.1. Hardware necesario
+	
 	2.2. Software necesario
+	
 	2.3. Software de utilidad
     
 3. **Configuración del Entorno Virtual y Dependencias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
+	
 	3.1. Entorno Virtual  'env'
+	
 	3.2. Clonar la librería libiio en la carpeta del proyecto
+	
 	3.3. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
+	
 	3.4. Clonar los scripts de prueba escritos en python
+	
 	3.5. Descargar requerimientos de la librería pyadi-iio
     
 4. **Flujo de Trabajo y Verificación de Diagnóstico**
     
     4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
-    4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
+
+   4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
         
-5. **Ejecución de Scripts y Captura de Datos**
+6. **Ejecución de Scripts y Captura de Datos**
     
     5.1. Medición de punto único (`cn0565_example_single.py`)
         
-6. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
+7. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
-## 1.1. Descripción corta de la CN0565
-La placa CN0565 es un sistema de medición de impedancia con la posibilidad de tomar mediciones en configuración bipolar o tetrapolar. Su etapa de _matrix switch_ le brinda la posibilidad realizar tomografía por impedancia eléctrica (EIT).
-Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo de conductividades que puede ser reconstruido utilizando una repetida  serie de mediciones con electrodos ubicados en diferentes lugares de la superficie de la muestra. Soporta setups de mediciones de hasta 24 electrodos. El diseño usa un par de _matrix switches_ analógicos de 8x12 (ADG2128, Analog Devices), que se activan con una señal de excitación que es aplicada a un par de electrodos cada vez. 
+## 1.1. Descripción breve de la CN0565
+La placa CN0565 es un sistema de medición de impedancia con la posibilidad de tomar mediciones en configuración bipolar o tetrapolar. Su etapa de _matrix switch_ le brinda la posibilidad realizar tomografía por impedancia eléctrica (EIT) o espectroscopía de impedancia electrica (EIS) por uno o varios canales (solo en configuración bipolar).
+Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo de conductividades que puede ser reconstruido utilizando una repetida  serie de mediciones con electrodos ubicados en diferentes lugares de la superficie de la muestra. Soporta setups de mediciones de hasta 24 electrodos. El diseño usa un par de _matrix switches_ analógicos de 8x12 (ADG2128, Analog Devices), que se activan con una señal de excitación que es aplicada a un par de electrodos cada vez. Esta misma versatilidad es la que permite tomar mediciones de EIS por 12 canales (configuración bipolar).
 
 ## 1.2. Diagrama en bloques simplificado
 ![[CN0565 Simplified Block Diagram.png]]
@@ -39,7 +51,7 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 ## 1.3. Caracteristicas y jumpers P7/P1:
 
 ### Características:
-* Soporta setups de medicion de impedancia de hasta 24 pares de electrodos.
+* Soporta setups de medicion de impedancia de hasta 24 canales (EIT) o 12 pares de electrodos (EIS).
 * Acepta un rango de frecuencia de un rango desde 0.015 Hz hasta 200kHz
 * Para más información visitar: https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0565
 ### Jumpers
