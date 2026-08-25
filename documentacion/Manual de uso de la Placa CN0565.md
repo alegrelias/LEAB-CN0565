@@ -1,4 +1,3 @@
-
 # Índice
 
 1.  **Introducción y Especificaciones Técnicas** 
