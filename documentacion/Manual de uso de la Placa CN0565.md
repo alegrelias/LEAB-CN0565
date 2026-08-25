@@ -41,9 +41,9 @@
 7. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
-## 1.1. Descripción corta de la CN0565
-La placa CN0565 es un sistema de medición de impedancia con la posibilidad de tomar mediciones en configuración bipolar o tetrapolar. Su etapa de _matrix switch_ le brinda la posibilidad realizar tomografía por impedancia eléctrica (EIT).
-Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo de conductividades que puede ser reconstruido utilizando una repetida  serie de mediciones con electrodos ubicados en diferentes lugares de la superficie de la muestra. Soporta setups de mediciones de hasta 24 electrodos. El diseño usa un par de _matrix switches_ analógicos de 8x12 (ADG2128, Analog Devices), que se activan con una señal de excitación que es aplicada a un par de electrodos cada vez. 
+## 1.1. Descripción breve de la CN0565
+La placa CN0565 es un sistema de medición de impedancia con la posibilidad de tomar mediciones en configuración bipolar o tetrapolar. Su etapa de _matrix switch_ le brinda la posibilidad realizar tomografía por impedancia eléctrica (EIT) o espectroscopía de impedancia electrica (EIS) por uno o varios canales (solo en configuración bipolar).
+Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo de conductividades que puede ser reconstruido utilizando una repetida  serie de mediciones con electrodos ubicados en diferentes lugares de la superficie de la muestra. Soporta setups de mediciones de hasta 24 electrodos. El diseño usa un par de _matrix switches_ analógicos de 8x12 (ADG2128, Analog Devices), que se activan con una señal de excitación que es aplicada a un par de electrodos cada vez. Esta misma versatilidad es la que permite tomar mediciones de EIS por 12 canales (configuración bipolar).
 
 ## 1.2. Diagrama en bloques simplificado
 ![[CN0565 Simplified Block Diagram.png]]
@@ -51,7 +51,7 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 ## 1.3. Caracteristicas y jumpers P7/P1:
 
 ### Características:
-* Soporta setups de medicion de impedancia de hasta 24 pares de electrodos.
+* Soporta setups de medicion de impedancia de hasta 24 canales (EIT) o 12 pares de electrodos (EIS).
 * Acepta un rango de frecuencia de un rango desde 0.015 Hz hasta 200kHz
 * Para más información visitar: https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0565
 ### Jumpers
