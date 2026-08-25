@@ -9,27 +9,36 @@
 	1.3. Características y jumpers P7/P1
     
 2. **Requisitos de Software y Control de Versiones**
+	
 	2.1. Hardware necesario
+	
 	2.2. Software necesario
+	
 	2.3. Software de utilidad
     
 3. **Configuración del Entorno Virtual y Dependencias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
+	
 	3.1. Entorno Virtual  'env'
+	
 	3.2. Clonar la librería libiio en la carpeta del proyecto
+	
 	3.3. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
+	
 	3.4. Clonar los scripts de prueba escritos en python
+	
 	3.5. Descargar requerimientos de la librería pyadi-iio
     
 4. **Flujo de Trabajo y Verificación de Diagnóstico**
     
     4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
-    4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
+
+   4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
         
-5. **Ejecución de Scripts y Captura de Datos**
+6. **Ejecución de Scripts y Captura de Datos**
     
     5.1. Medición de punto único (`cn0565_example_single.py`)
         
-6. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
+7. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
 ## 1.1. Descripción corta de la CN0565
