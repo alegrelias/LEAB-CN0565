@@ -1,8 +1,11 @@
 # Índice
 
 1.  **Introducción y Especificaciones Técnicas** 
+	
 	1.1. Descripción corta de la CN0565
+	
 	1.2. Diagrama en bloques simplificado
+	
 	1.3. Características y jumpers P7/P1
     
 2. **Requisitos de Software y Control de Versiones**
