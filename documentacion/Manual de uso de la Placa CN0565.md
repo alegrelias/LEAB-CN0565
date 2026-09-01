@@ -194,7 +194,7 @@ https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/
 
 - Ubicar el archivo HEX y copiarlo hasta la unidad DAPLINK (D:)
 
-- abrir Tera Term, seleccionar configuración, serial port y poner el baud rate en 115200
+- Para verificar la correcta comunicación entre la placa y la PC abrir la aplicación Tera Term (ver sección 2.2), seleccionar configuración, serial port y poner el baud rate en 115200
 
 - apretar el boton reset de la placa adicup
 
