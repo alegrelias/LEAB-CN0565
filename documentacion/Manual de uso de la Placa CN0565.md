@@ -28,17 +28,17 @@
 	
 	3.5. Descargar requerimientos de la librería pyadi-iio
     
-4. **Flujo de Trabajo y Verificación de Diagnóstico**
+1. **Pruebas de comunicación con la placa**
     
     4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
 
    4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
         
-5. **Ejecución de Scripts y Captura de Datos**
+2. **Ejecución de Scripts y Captura de Datos**
     
     5.1. Medición de punto único (`cn0565_example_single.py`)
         
-6. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
+3. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
 ## 1.1. Descripción breve de la CN0565
@@ -162,7 +162,8 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio>  python -m pip install -r requirements_prod_test.txt
 ```
 
-# 4. Flujo de Trabajo y Verificación de Diagnóstico
+Si todos estos pasos se cumplieron con éxito estamos en condiciones de establecer conexión con la placa.
+# 4. Pruebas de comunicación con la placa
 ## 4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
 Este firmware puede ayudar a verificar que la placa responde correctamente.
 Pasos a seguir para utilizarlo:
