@@ -8,7 +8,7 @@
 	
 	1.3. Características y jumpers P7/P1
     
-2. **Requisitos de Software y Control de Versiones**
+1. **Requisitos de Software y Hardware
 	
 	2.1. Hardware necesario
 	
@@ -16,7 +16,7 @@
 	
 	2.3. Software de utilidad
     
-3. **Configuración del Entorno Virtual y Dependencias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
+2. **Configuración del Entorno Virtual y Dependencias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
 	
 	3.1. Entorno Virtual  'env'
 	
@@ -28,17 +28,17 @@
 	
 	3.5. Descargar requerimientos de la librería pyadi-iio
     
-4. **Flujo de Trabajo y Verificación de Diagnóstico**
+3. **Flujo de Trabajo y Verificación de Diagnóstico**
     
     4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
 
    4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
         
-6. **Ejecución de Scripts y Captura de Datos**
+4. **Ejecución de Scripts y Captura de Datos**
     
     5.1. Medición de punto único (`cn0565_example_single.py`)
         
-7. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
+5. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
 ## 1.1. Descripción breve de la CN0565
@@ -69,9 +69,11 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 * Cable micro-USB
 ## 2.2. Software necesario:
 + Firmware incorporado CN0565 (Archivo HEX)
+	+ https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/cn0565/cn0565_hex.zip
 + Libiio (driver)
-	+ setup: https://github.com/analogdevicesinc/libiio/releases/download/v0.26/libiio-0.26.ga0eca0d2-setup.exe
+	+ archivo instalador: https://github.com/analogdevicesinc/libiio/releases/download/v0.26/libiio-0.26.ga0eca0d2-setup.exe
 + Python (versión más actual)
+	+ https://www.python.org/downloads/
 + pyadi-iio (librería necesaria)
 
 ## 2.3. Software de utilidad
@@ -301,11 +303,11 @@ Resultados:
 
 ## 6. Troubleshooting
 
-| Problema | Posible Solución |
-| :--- | :--- |
-| **Error de conexión** | Realizar el flasheo de la EVAL-ADICUP3029 mediante el software Crosscore Serial Flash y posteriormente probar la respuesta de la placa con Tera Term.<br>Al terminar este procedimiento volver a conectar la placa, arrastrar y soltar el archivo `.hex` dentro de la carpeta DAPLINK y acondicionar el entorno virtual para realizar las pruebas. |
-| **Error al activar el entorno (`PSSecurityException`)** | Ocurre porque PowerShell bloquea la ejecución de scripts por defecto en instalaciones nuevas de Windows. Para solucionarlo, ejecutar el siguiente comando:<br>`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`<br>Presionar la tecla **S** (o Y) para confirmar y luego volver a intentar activar el entorno con `.\env\Scripts\activate`. |
-| **Errores con `venv` (rutas rotas)** | Si el entorno virtual falla al activarse o presenta rutas rotas (común al mover la carpeta del proyecto a otra ubicación):<br>1. Eliminar manualmente la carpeta `env` y volver a crearla con `py -m venv env`.<br>2. Para consultar buenas prácticas de gestión, revisar el **[Tutorial oficial de Python: Entornos virtuales y paquetes](https://docs.python.org/es/3/tutorial/venv.html)**. |
-| **Errores o dudas con Git (clonado de repositorios)** | Si al ejecutar `git clone` la terminal indica que el comando no se reconoce, verificar que Git esté instalado y agregado al PATH del sistema.<br>Para usuarios no familiarizados con la herramienta, consultar el **[Libro oficial Pro Git en español](https://git-scm.com/book/es/v2)** o la **[Guía de instalación de Git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)**. |
-| **Librerías faltantes (análisis y gráficos)** | Si ocurre un `ModuleNotFoundError` al generar reportes o imágenes, instalar las dependencias con:<br>`python -m pip install openpyxl pyeit matplotlib` |
-| **Error de TimeOut (138)** | El puerto COM es de acceso exclusivo. **Desconectar o cerrar siempre Tera Term** antes de ejecutar comandos de `iio_info` o correr los scripts de Python, y viceversa. Si dos programas intentan acceder al mismo puerto simultáneamente, la comunicación fallará con un error de *Timeout*. |
+| Problema                                                | Posible Solución                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Error de conexión**                                   | Realizar el flasheo de la EVAL-ADICUP3029 mediante el software Crosscore Serial Flash y posteriormente probar la respuesta de la placa con Tera Term.<br>Al terminar este procedimiento volver a conectar la placa, arrastrar y soltar el archivo `.hex` dentro de la carpeta DAPLINK y acondicionar el entorno virtual para realizar las pruebas.                                                                             |
+| **Error al activar el entorno (`PSSecurityException`)** | Ocurre porque PowerShell bloquea la ejecución de scripts por defecto en instalaciones nuevas de Windows. Para solucionarlo, ejecutar el siguiente comando:<br>`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`<br>Presionar la tecla **S** (o Y) para confirmar y luego volver a intentar activar el entorno con `.\env\Scripts\activate`.                                                               |
+| **Errores con `venv` (rutas rotas)**                    | Si el entorno virtual falla al activarse o presenta rutas rotas (común al mover la carpeta del proyecto a otra ubicación):<br>1. Eliminar manualmente la carpeta `env` y volver a crearla con `py -m venv env`.<br>2. Para consultar buenas prácticas de gestión, revisar el **[Tutorial oficial de Python: Entornos virtuales y paquetes](https://docs.python.org/es/3/tutorial/venv.html)**.                                 |
+| **Errores o dudas con Git (clonado de repositorios)**   | Si al ejecutar `git clone` la terminal indica que el comando no se reconoce, verificar que Git esté instalado y agregado al PATH del sistema.<br>Para usuarios no familiarizados con la herramienta, consultar el **[Libro oficial Pro Git en español](https://git-scm.com/book/es/v2)** o la **[Guía de instalación de Git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)**. |
+| **Librerías faltantes (análisis y gráficos)**           | Si ocurre un `ModuleNotFoundError` al generar reportes o imágenes, instalar las dependencias con:<br>`python -m pip install openpyxl pyeit matplotlib`                                                                                                                                                                                                                                                                         |
+| **Error de TimeOut (138)**                              | El puerto COM es de acceso exclusivo. **Desconectar o cerrar siempre Tera Term** antes de ejecutar comandos de `iio_info` o correr los scripts de Python, y viceversa. Si dos programas intentan acceder al mismo puerto simultáneamente, la comunicación fallará con un error de *Timeout*.                                                                                                                                   |
