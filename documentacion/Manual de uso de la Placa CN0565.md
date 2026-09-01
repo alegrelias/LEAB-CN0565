@@ -8,7 +8,7 @@
 	
 	1.3. Características y jumpers P7/P1
     
-1. **Requisitos de Software y Hardware
+1. **Requisitos de Software y Hardware**
 	
 	2.1. Hardware necesario
 	
