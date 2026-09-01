@@ -17,7 +17,6 @@
 	2.3. Software de utilidad
     
 3. **Instalación de aplicaciones necesarias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
-	El proceso de instalación para el correcto funcionamiento de la placa CN0565 requiere de la configuración e instalación de diversos elementos (programas, librerías, aplicaciones, entre otros). Todo esto puede realizarse desde la secuencia de pasos que se indica a continuación sin la creación de un entorno virtual; no obstante consideramos que las buenas practicas de instalación de una secuencia como la que sigue requieren del mismo. Por lo que a continuación se detalla la instalación con la correspondiente creación de un entorno virtual (NOTA: https://docs.python.org/3/tutorial/venv.html).
 	
 	3.1. Entorno Virtual  'env'
 	
@@ -61,7 +60,7 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 * P1 
 ![[P1 Location.png]]
 
-# 2. Requisitos de Software y Control de Versiones
+# 2. Requisitos de Software y Hardware
 
 ## 2.1. Hardware necesario:
 * EVAL-CN0565-ARDZ
@@ -89,7 +88,8 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 	* Git: https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git
 	* GitHub: https://github.com/
   
-# 3. Configuración del Entorno Virtual y Dependencias
+# 3. Instalación de aplicaciones necesarias
+El proceso de instalación para el correcto funcionamiento de la placa CN0565 requiere de la configuración e instalación de diversos elementos (programas, librerías, aplicaciones, entre otros). Todo esto puede realizarse desde la secuencia de pasos que se indica a continuación sin la creación de un entorno virtual; no obstante consideramos que las buenas practicas de instalación de una secuencia como la que sigue requieren del mismo. Por lo que a continuación se detalla la instalación con la correspondiente creación de un entorno virtual (NOTA: https://docs.python.org/3/tutorial/venv.html).
 
 ## 3.1 Entorno Virtual  'env'
 - Creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`).
