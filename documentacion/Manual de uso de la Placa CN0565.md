@@ -110,7 +110,7 @@ De ejecutarse correctamente se debe observar que el prompt cambió a la siguient
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565>
 ```
 ## 3.3. Clonar la librería libiio en la carpeta del proyecto
-**NOTA:** En varios de los siguientes pasos para instalar dependencias o librerías se utilizan comandos de Git desde la consola. Para ello es necesario tener instalado previamente Git (ver seccion 2.2 software necesario).
+**NOTA:** En varios de los siguientes pasos para instalar dependencias o librerías se utilizan comandos de Git desde la consola. Para ello es necesario tener instalado previamente Git (ver sección 2.2 software necesario).
 ```PowerShell
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565> git clone https://github.com/analogdevicesinc/libiio.git
 ```
