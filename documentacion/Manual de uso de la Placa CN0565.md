@@ -185,12 +185,14 @@ Pasos a seguir:
 
 - Volver a montar la placa CN0565 sobre la ADICUP3029
 
-- conectar nuevamente la placa a la pc
-
 ## 4.2 Instalación del archivo HEX
 Descargar el firmware a través del siguiente enlace:
 https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/cn0565/cn0565_hex.zip
-- arrastrar y soltar el archivo hex
+
+- Conectar la placa a la PC 
+	- **NOTA**: al conectarse la placa va a generarse una unidad virtual llamada DAPLINK (D:)
+
+- Ubicar el archivo HEX y copiarlo hasta la unidad DAPLINK (D:)
 
 - abrir Tera Term, seleccionar configuración, serial port y poner el baud rate en 115200
 
