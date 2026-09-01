@@ -181,8 +181,6 @@ Pasos a seguir:
 
 - Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y haga click simultáneamente start en la aplicación.
 
-- deconectar la adicup
-
 - volver a montar la adicup con la cn0565
 
 - conectar nuevamente la placa a la pc
