@@ -8,7 +8,7 @@
 	
 	1.3. Características y jumpers P7/P1
     
-1. **Requisitos de Software y Hardware**
+2. **Requisitos de Software y Hardware**
 	
 	2.1. Hardware necesario
 	
@@ -16,7 +16,8 @@
 	
 	2.3. Software de utilidad
     
-2. **Configuración del Entorno Virtual y Dependencias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
+3. **Instalación de aplicaciones necesarias** (`venv`, `pyadi-iio`, `pyeit`, `openpyxl`)
+	El proceso de instalación para el correcto funcionamiento de la placa CN0565 requiere de la configuración e instalación de diversos elementos (programas, librerías, aplicaciones, entre otros). Todo esto puede realizarse desde la secuencia de pasos que se indica a continuación sin la creación de un entorno virtual; no obstante consideramos que las buenas practicas de instalación de una secuencia como la que sigue requieren del mismo. Por lo que a continuación se detalla la instalación con la correspondiente creación de un entorno virtual (NOTA: https://docs.python.org/3/tutorial/venv.html).
 	
 	3.1. Entorno Virtual  'env'
 	
@@ -28,17 +29,17 @@
 	
 	3.5. Descargar requerimientos de la librería pyadi-iio
     
-3. **Flujo de Trabajo y Verificación de Diagnóstico**
+4. **Flujo de Trabajo y Verificación de Diagnóstico**
     
     4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
 
    4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
         
-4. **Ejecución de Scripts y Captura de Datos**
+5. **Ejecución de Scripts y Captura de Datos**
     
     5.1. Medición de punto único (`cn0565_example_single.py`)
         
-5. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
+6. **Resolución de Problemas Comunes (Troubleshooting)** (Timeouts 138, puertos bloqueados, error de rutas en OneDrive)
 
 # 1. Introducción y Especificaciones Técnicas
 ## 1.1. Descripción breve de la CN0565
