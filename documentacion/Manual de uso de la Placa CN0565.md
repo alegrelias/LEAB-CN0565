@@ -91,7 +91,11 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 # 3. Instalación de aplicaciones necesarias
 El proceso de instalación para el correcto funcionamiento de la placa CN0565 requiere de la configuración e instalación de diversos elementos (programas, librerías, aplicaciones, entre otros). Todo esto puede realizarse desde la secuencia de pasos que se indica a continuación sin la creación de un entorno virtual; no obstante consideramos que las buenas practicas de instalación de una secuencia como la que sigue requieren del mismo. Por lo que a continuación se detalla la instalación con la correspondiente creación de un entorno virtual (NOTA: https://docs.python.org/3/tutorial/venv.html).
 
-## 3.1 Entorno Virtual  'env'
+
+## 3.1 Crear una carpeta del proyecto
+Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida creación del entorno virtual, instalación de las posteriores dependencias y donde se alojarán las carpetas relativas al proyecto.
+
+## 3.2 Entorno Virtual  'env'
 - Creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`).
 ```PowerShell
 PS C:\Users\elias\OneDrive\LEAB\cn0565> py -m venv env
@@ -103,13 +107,13 @@ PS C:\Users\elias\OneDrive\LEAB\cn0565> .\env\Scripts\activate
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565>
 ```
 
-## 3.2. Clonar la librería libiio en la carpeta del proyecto
+## 3.3. Clonar la librería libiio en la carpeta del proyecto
 **NOTA:** En varios de los pasos posteriores se puede ver que para instalar dependencias o librerías uso comandos de Git desde la consola, no es obligatorio que se use esta herramienta, pero en caso de que se la quiera usar debe tenerse previamente instalado Git en su ordenador.
 ```PowerShell
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565> git clone https://github.com/analogdevicesinc/libiio.git
 ```
 
-## 3.3. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
+## 3.4. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
 **NOTA:** Al instalar librerías con el comando `pip` dentro del entorno virtual, estas solo van a estar disponibles para este proyecto, dichas librerías pueden ser consultadas en la carpeta `env`. 
 **NOTA:** Utilizamos la sintaxis `python -m pip` en lugar de llamar a `pip` directamente para asegurarnos de que la instalación se aplique estrictamente al entorno virtual de Python que está activo y evitar problemas de rutas.
 
@@ -123,12 +127,12 @@ PS C:\Users\elias\OneDrive\LEAB\cn0565> .\env\Scripts\activate
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565> python -m pip install pyadi-iio
 ```
 
-## 3.4. Clonar los scripts de prueba escritos en python
+## 3.5. Clonar los scripts de prueba escritos en python
 ```PowerShell
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565> git clone https://github.com/analogdevicesinc/pyadi-iio.git
 ```
 
-## 3.5. Descargar requerimientos de la librería pyadi-iio
+## 3.6. Descargar requerimientos de la librería pyadi-iio
 Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi-iio e instalar los `requerimientos de software`:
 
 ### Navegamos a la carpeta pyadi-iio
