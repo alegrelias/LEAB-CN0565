@@ -93,7 +93,7 @@ El proceso de instalación para el correcto funcionamiento de la placa CN0565 re
 
 
 ## 3.1 Crear una carpeta del proyecto
-Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida creación del entorno virtual, instalación de las posteriores dependencias y donde se alojarán las carpetas relativas al proyecto.
+Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida creación del entorno virtual, instalación de las posteriores dependencias y donde se alojarán las carpetas relativas al proyecto. Para acceder al promt donde se ejecutarán las lineas de comando que se indican a continuación se debe ejecutar `cmd` desde la barra de ejecución de windows.
 
 ## 3.2 Entorno Virtual  'env'
 - Creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`).
