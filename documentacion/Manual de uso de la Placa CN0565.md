@@ -185,6 +185,9 @@ Pasos a seguir:
 
 - conectar nuevamente la placa a la pc
 
+## 4.2 Instalación del archivo HEX
+Descargar el firmware a través del siguiente enlace:
+https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/cn0565/cn0565_hex.zip
 - arrastrar y soltar el archivo hex
 
 - abrir Tera Term, seleccionar configuración, serial port y poner el baud rate en 115200
@@ -212,7 +215,7 @@ Running TinyIIOD server...
                                                                                 Flow control: none
 ```
 
-## 4.2. Verificación de abstracción de hardware con `iio_info` (a 230400)
+## 4.3. Verificación de abstracción de hardware con `iio_info` (a 230400)
 **NOTA:** `COM3` es un ejemplo y el número de puerto puede cambiar dependiendo de la PC o de la entrada USB utilizada. revisar el _Administrador de Dispositivos_ de Windows si no está seguro de cuál es su puerto asignado.
 Para esta prueba utilizamos el baudrate y el puerto USB que nos arrojó Tera Term y seguimos los siguientes pasos:
 
