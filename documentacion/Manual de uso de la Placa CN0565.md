@@ -105,7 +105,7 @@ PS C:\Users\elias\OneDrive\LEAB\cn0565> py -m venv env
 ```Powershell
 PS C:\Users\elias\OneDrive\LEAB\cn0565> .\env\Scripts\activate
 ```
-De ejecutarse correctamente se debe observarse que el prompt cambió a la siguiente forma:
+De ejecutarse correctamente se debe observar que el prompt cambió a la siguiente forma:
 ```
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565>
 ```
