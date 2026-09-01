@@ -118,8 +118,10 @@ Para clonar ejecute la siguiente linea de comandos:
 ```
 
 ## 3.4. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
-**NOTA:** Al instalar librerías con el comando `pip` dentro del entorno virtual, estas solo van a estar disponibles para este proyecto, dichas librerías pueden ser consultadas en la carpeta `env`. 
-**NOTA:** Utilizamos la sintaxis `python -m pip` en lugar de llamar a `pip` directamente para asegurarnos de que la instalación se aplique estrictamente al entorno virtual de Python que está activo y evitar problemas de rutas.
+**NOTA 1:** Al instalar librerías con el comando `pip` dentro del entorno virtual, estas solo van a estar disponibles para este proyecto, dichas librerías pueden ser consultadas en la carpeta `env`. 
+
+
+**NOTA 2:** Utilizamos la sintaxis `python -m pip` en lugar de llamar a `pip` directamente para asegurarnos de que la instalación se aplique estrictamente al entorno virtual de Python que está activo y evitar problemas de rutas.
 
 - pylibiio:
 ```Powershell
