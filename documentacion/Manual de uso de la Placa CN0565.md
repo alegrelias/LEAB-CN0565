@@ -169,9 +169,17 @@ Tera Term es un firmaware que se utilizará para verificar la correcta comunicac
 Pasos a seguir:
 - Con la placa desconectada de la PC, separar la ADICUP3029 de la placa CN0565.
 
-- conectar la ADICUP3029 a la pc
+- Conectar la ADICUP3029 a la pc
 
-- Abrir Crosscore Serial Flash y mientras se pulsa el boton BOOT de la placa seleccionar la opción Erase.
+- Abrir desde la PC el programa Crosscore Serial Flash (ver sección 2.2).
+
+- Una vez abierto el programa Crosscore Serial Flash configurar los siguientes parametros en la aplicación:
+	- Target: ADuCM302x
+	- Serial Port: Seleccionar el puerto COM disponible para la placa (esto lo determina windows a criterio propio, si la seccion está vaciá la placa ADICUP3029 está desconectada o usted está teniendo problemas con windows)
+	- Baudrate: 115200
+	- Action: Erase
+
+- Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y haga click simultáneamente start en la aplicación.
 
 - deconectar la adicup
 
