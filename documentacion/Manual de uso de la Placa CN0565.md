@@ -96,17 +96,19 @@ El proceso de instalación para el correcto funcionamiento de la placa CN0565 re
 Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida creación del entorno virtual, instalación de las posteriores dependencias y donde se alojarán las carpetas relativas al proyecto. Para acceder al promt donde se ejecutarán las lineas de comando que se indican a continuación se debe ejecutar `cmd` desde la barra de ejecución de windows.
 
 ## 3.2 Entorno Virtual  'env'
-- El prompt debe estar en la carpeta correspondiente a la carpeta que creamos. Posteriormente creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`).
+- El prompt debe estar en la carpeta correspondiente a la carpeta que creamos. Posteriormente creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`). Ejecutar la siguiente linea:
 ```PowerShell
 PS C:\Users\elias\OneDrive\LEAB\cn0565> py -m venv env
 ```
 
-- Para activar nuestro entorno virtual debemos ejecutar el segundo comando, el cual busca dentro de la carpeta de Scripts el comando `activate`, al ejecutar este comando debe aparecernos el nombre de nuestro entorno virtual entre paréntesis. 
+- Para activar nuestro entorno virtual debemos ejecutar el segundo comando, (a continuación de este parrafo); el cual busca dentro de la carpeta de Scripts el comando `activate`.
 ```Powershell
 PS C:\Users\elias\OneDrive\LEAB\cn0565> .\env\Scripts\activate
+```
+De ejecutarse correctamente se debe observarse que el prompt cambió a la siguiente forma:
+```
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565>
 ```
-
 ## 3.3. Clonar la librería libiio en la carpeta del proyecto
 **NOTA:** En varios de los pasos posteriores se puede ver que para instalar dependencias o librerías uso comandos de Git desde la consola, no es obligatorio que se use esta herramienta, pero en caso de que se la quiera usar debe tenerse previamente instalado Git en su ordenador.
 ```PowerShell
