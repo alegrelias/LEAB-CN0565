@@ -143,7 +143,7 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 
 ### Navegamos a la carpeta pyadi-iio
 ```Powershell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> cd C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio
+(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> cd pyadi-iio
 ```
 - requirements.txt
 ```PowerShell
