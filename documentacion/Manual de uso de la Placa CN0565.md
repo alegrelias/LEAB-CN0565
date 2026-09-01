@@ -76,6 +76,7 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 + Python (versión más actual)
 	+ https://www.python.org/downloads/
 + pyadi-iio (librería necesaria)
+	+ https://github.com/analogdevicesinc/pyadi-iio
 
 ## 2.3. Software de utilidad
 * Instalar Crosscore Serial Flash
