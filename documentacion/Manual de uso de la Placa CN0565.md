@@ -179,7 +179,7 @@ Pasos a seguir:
 	- Baudrate: 115200
 	- Action: Erase
 
-- Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y haga click simultáneamente start en la aplicación.
+- Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y simultáneamente haga click start en la aplicación.
 
 - volver a montar la adicup con la cn0565
 
