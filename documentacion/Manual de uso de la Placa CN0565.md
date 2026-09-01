@@ -164,14 +164,12 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 
 Si todos estos pasos se cumplieron con éxito estamos en condiciones de establecer conexión con la placa.
 # 4. Pruebas de comunicación con la placa
-## 4.1. Flasheo y verificación en consola serie (Tera Term a 115200)
-Este firmware puede ayudar a verificar que la placa responde correctamente.
-Pasos a seguir para utilizarlo:
-- Desconectar la placa
+## 4.1. Flasheo y verificación en la consola
+Tera Term es un firmaware que se utilizará para verificar la correcta comunicacion entre la placa CN0565 y la PC mediante la conexion fisica con cable micro-USB.
+Pasos a seguir:
+- Con la placa desconectada de la PC, separar la ADICUP3029 de la placa CN0565.
 
-- separar la Adicup3029 de la CN0565
-
-- conectar la adicup a la pc
+- conectar la ADICUP3029 a la pc
 
 - Abrir Crosscore Serial Flash y mientras se pulsa el boton BOOT de la placa seleccionar la opción Erase.
 
