@@ -99,23 +99,23 @@ Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida
 ## 3.2 Entorno Virtual  'env'
 - El prompt debe estar en la carpeta correspondiente a la carpeta que creamos. Posteriormente creamos un `entorno virtual venv` que es un directorio aislado que contiene una instalación independiente de **Python** y sus paquetes, permitiendo gestionar las dependencias de un proyecto específico sin interferir con el sistema global u otros proyectos. Al ejecutar el primer comando debería crearse una carpeta con el nombre que hayamos definido para el entorno virtual (por convención se usa `env`). Ejecutar la siguiente linea:
 ```PowerShell
-PS C:\Users\elias\OneDrive\LEAB\cn0565> py -m venv env
+PS C:\cn0565> py -m venv env
 ```
 
 - Para activar nuestro entorno virtual debemos ejecutar el segundo comando, (a continuación de este parrafo); el cual busca dentro de la carpeta de Scripts el comando `activate`.
 ```Powershell
-PS C:\Users\elias\OneDrive\LEAB\cn0565> .\env\Scripts\activate
+PS C:\cn0565> .\env\Scripts\activate
 ```
 De ejecutarse correctamente se debe observar que el prompt cambió a la siguiente forma:
 ```
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565>
+(env) PS C:\cn0565>
 ```
 ## 3.3. Clonar la librería libiio en la carpeta del proyecto
 **NOTA:** En varios de los siguientes pasos para instalar dependencias o librerías se utilizan comandos de Git desde la consola. Para ello es necesario tener instalado previamente Git (ver sección 2.2 software necesario). 
 
 Para clonar ejecute la siguiente linea de comandos:
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> git clone https://github.com/analogdevicesinc/libiio.git
+(env) PS C:\cn0565> git clone https://github.com/analogdevicesinc/libiio.git
 ```
 
 ## 3.4. Instalar pylibiio  y pyadi-iio mediante el comando "pip" en el entorno virtual
@@ -126,17 +126,17 @@ Para clonar ejecute la siguiente linea de comandos:
 
 - pylibiio:
 ```Powershell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> python -m pip install pylibiio
+(env) PS C:\cn0565> python -m pip install pylibiio
 ```
 
 - pyadi-iio:
 ```Powershell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> python -m pip install pyadi-iio
+(env) PS C:\cn0565> python -m pip install pyadi-iio
 ```
 
 ## 3.5. Clonar los scripts de prueba escritos en python
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> git clone https://github.com/analogdevicesinc/pyadi-iio.git
+(env) PS C:\cn0565> git clone https://github.com/analogdevicesinc/pyadi-iio.git
 ```
 
 ## 3.6. Descargar requerimientos de la librería pyadi-iio
@@ -144,23 +144,23 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 
 ### Navegamos a la carpeta pyadi-iio
 ```Powershell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565> cd pyadi-iio
+(env) PS C:\cn0565> cd pyadi-iio
 ```
 - requirements.txt
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio> python -m pip install -r requirements.txt
+(env) PS C:\cn0565\pyadi-iio> python -m pip install -r requirements.txt
 ```
 - requirements_dev.txt
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio>  python -m pip install -r requirements_dev.txt
+(env) PS C:\cn0565\pyadi-iio>  python -m pip install -r requirements_dev.txt
 ```
 - requirements_doc.txt 
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio>  python -m pip install -r requirements_doc.txt
+(env) PS C:\cn0565\pyadi-iio>  python -m pip install -r requirements_doc.txt
 ```
 - requirements_prod_test.txt
 ```PowerShell
-(env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio>  python -m pip install -r requirements_prod_test.txt
+(env) PS C:\cn0565\pyadi-iio>  python -m pip install -r requirements_prod_test.txt
 ```
 
 ## 3.7 Instalación de Libiio
@@ -317,7 +317,7 @@ ERROR: checking for trigger : Invalid argument (22)
 - Navegar a la carpeta `pyadi-iio\examples\cn0565`:
 
 ```Powershell
-cd C:\Users\elias\OneDrive\Escritorio\LEAB\cn0565\pyadi-iio\examples\cn0565
+cd C:\cn0565\pyadi-iio\examples\cn0565
 ```
 
 - Abrir el script de python cn0565_example_single.py y modificar la linea, cambiando el puerto serial y el baudrate:
@@ -327,7 +327,7 @@ my_eit = adi.cn0565(uri="serial:COM3,230400")
 
 - abrir una terminal en la raíz del ejemplo con el entorno virtual activado y ejecutar el comando:
 ```Powershell
-(env) PS C:\Users\elias\OneDrive\Escritorio\LEAB\cn0565\pyadi-iio\examples\cn0565> python cn0565_example_single.py 0 1 1 0
+(env) PS C:\cn0565\pyadi-iio\examples\cn0565> python cn0565_example_single.py 0 1 1 0
 ```
 
 Resultados:
