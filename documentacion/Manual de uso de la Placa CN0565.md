@@ -316,6 +316,8 @@ ERROR: checking for trigger : Invalid argument (22)
 # 5. Ejecución de Scripts y Captura de Datos
 
 ## 5.1. Medición de punto único (`cn0565_example_single.py`)
+NOTA: Se sugiere ejecutar los siguientes `scripts` desde un entorno de desarrollo gráfico.
+
 - Navegar a la carpeta `pyadi-iio\examples\cn0565`:
 
 ```Powershell
