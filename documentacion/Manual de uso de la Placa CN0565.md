@@ -322,7 +322,7 @@ ERROR: checking for trigger : Invalid argument (22)
 cd C:\cn0565\pyadi-iio\examples\cn0565
 ```
 
-- Abrir el script de python cn0565_example_single.py y modificar la linea, cambiando el puerto serial y el baudrate:
+- Abrir el script de python cn0565_example_single.py y modificar la linea, cambiando el puerto serial y el baudrate (En nuestro caso el puerto serial es `COM3`):
 ```python
 my_eit = adi.cn0565(uri="serial:COM3,230400")
 ```
