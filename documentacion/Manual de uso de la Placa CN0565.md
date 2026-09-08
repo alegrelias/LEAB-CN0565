@@ -46,7 +46,7 @@ La placa CN0565 es un sistema de medición de impedancia con la posibilidad de t
 Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo de conductividades que puede ser reconstruido utilizando una repetida  serie de mediciones con electrodos ubicados en diferentes lugares de la superficie de la muestra. Soporta setups de mediciones de hasta 24 electrodos. El diseño usa un par de _matrix switches_ analógicos de 8x12 (ADG2128, Analog Devices), que se activan con una señal de excitación que es aplicada a un par de electrodos cada vez. Esta misma versatilidad es la que permite tomar mediciones de EIS por 12 canales (configuración bipolar).
 
 ## 1.2. Diagrama en bloques simplificado
-![[CN0565 Simplified Block Diagram.png]]
+![](Imágenes%20-%20CN0565/CN0565%20Simplified%20Block%20Diagram.png)
 
 ## 1.3. Caracteristicas y jumpers P7/P1:
 
@@ -56,9 +56,9 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 * Para más información visitar: https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0565
 ### Jumpers
 * P7 (Chip Select Mapping) - dejar este en default para el firmware provisto.
-![[P7 location.png]]
+![](Imágenes%20-%20CN0565/P7%20location.png)
 * P1 
-![[P1 Location.png]]
+![](Imágenes%20-%20CN0565/P1%20Location.png)
 
 # 2. Requisitos de Software y Hardware
 
@@ -331,7 +331,7 @@ my_eit = adi.cn0565(uri="serial:COM3,230400")
 ```
 
 Resultados:
-![[resultados prueba example_single.png]]
+![](Imágenes%20-%20CN0565/resultados%20prueba%20example_single.png)
 
 
 ## 6. Troubleshooting
