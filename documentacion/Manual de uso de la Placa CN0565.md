@@ -324,10 +324,12 @@ NOTA: Se sugiere ejecutar los siguientes `scripts` desde un entorno de desarroll
 cd C:\cn0565\pyadi-iio\examples\cn0565
 ```
 
-- Abrir el script de python cn0565_example_single.py y modificar la linea, cambiando el puerto serial y el baudrate (En nuestro caso el puerto serial es `COM3`):
+- Abrir el script de python cn0565_example_single.py y modificar la siguiente linea cambiando el puerto serial  y el baudrate (En nuestro caso el puerto serial es `COM3`).
 ```python
 my_eit = adi.cn0565(uri="serial:COM3,230400")
 ```
+- Guardar los cambios realizados en el archivo.
+
 
 - abrir una terminal en la raíz del ejemplo con el entorno virtual activado y ejecutar el comando:
 ```Powershell
