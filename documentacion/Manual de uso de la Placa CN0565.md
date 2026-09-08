@@ -230,8 +230,8 @@ Running TinyIIOD server...
                                                                                 Flow control: none
 ```
 
-## 4.3. Verificación de abstracción de hardware con `iio_info` (a 230400)
-**NOTA:** `COM3` es un ejemplo y el número de puerto puede cambiar dependiendo de la PC o de la entrada USB utilizada. revisar el _Administrador de Dispositivos_ de Windows si no está seguro de cuál es su puerto asignado.
+## 4.3. Verificación de funcionamiento librería libiio con hardware a 230400 baudios.
+**NOTA:** En las siguientes lineas se menciona el puerto de comunicación `COM3`. El nombre del puerto `COM` puede variar dependiendo  de cada PC. Se sugiere revisar el _Administrador de Dispositivos_ de Windows si no está seguro de cuál es su puerto asignado.
 Para esta prueba utilizamos el baudrate y el puerto USB que nos arrojó Tera Term y seguimos los siguientes pasos:
 
 - desconectar la placa
