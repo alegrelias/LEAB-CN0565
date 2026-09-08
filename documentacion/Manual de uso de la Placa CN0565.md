@@ -180,6 +180,7 @@ Pasos a seguir:
 	- Action: Erase
 
 - Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y simultáneamente haga click start en la aplicación.
+![[EVAL-ADICUP3029-Top-webBOOT-BTN.png]]
 
 - Desconectar la ADICUP3029 de la PC
 
@@ -194,9 +195,12 @@ https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/
 
 - Ubicar el archivo HEX y copiarlo hasta la unidad DAPLINK (D:)
 
-- Para verificar la correcta comunicación entre la placa y la PC abrir la aplicación Tera Term (ver sección 2.2), seleccionar configuración, serial port y poner el baud rate en 115200
+- Para verificar la correcta comunicación entre la placa y la PC abrir la aplicación Tera Term (ver sección 2.2)
 
-- apretar el boton reset de la placa adicup
+- En la primer pestaña seleccionar -> Configuracion -> Seleccionar Baudrate en 115200 -> Seleccionar OK.
+
+- Presionar el boton RESET de la placa ADICUP3029 (ver siguiente imagen)
+  ![[EVAL-ADICUP3029-Top-web-RESET-BTN.png]]
 
 Resultados de la terminal de Tera Term:
 ```Bash
