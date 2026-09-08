@@ -190,6 +190,8 @@ Pasos a seguir:
 - Desconectar la ADICUP3029 de la PC
 
 - Volver a montar la placa CN0565 sobre la ADICUP3029
+  
+NOTA: Según el modelo de la placa ADICUP3029 el orden de los botones RESET, BOOT y WIFI RESET pueden estar intercambiados. Revisar las notas encima de los botones.
 
 ## 4.2 Instalación del archivo HEX
 Descargar el firmware a través del siguiente enlace:
