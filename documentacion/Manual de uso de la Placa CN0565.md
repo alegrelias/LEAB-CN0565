@@ -164,8 +164,8 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 ```
 
 ## 3.7 Instalación de Libiio
-A continuación se debe instalar la siguiente libreria, la cual será utilizada en pasos posteriores para probar la comunicación:
-- archivo instalador: https://github.com/analogdevicesinc/libiio/releases/download/v0.26/libiio-0.26.ga0eca0d2-setup.exe
+A continuación se debe instalar la libreria libiio que ya ha sido descargada en el ítem 2.2. 
+Solo debe ejecutar el archivo descargado y seguir los pasos que le indique el instalador.
 
 Si todos estos pasos se cumplieron con éxito estamos en condiciones de establecer conexión con la placa.
 # 4. Pruebas de comunicación con la placa
