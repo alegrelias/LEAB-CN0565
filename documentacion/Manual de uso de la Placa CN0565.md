@@ -163,6 +163,10 @@ Luego de clonar los scripts de prueba debemos navegar dentro de la carpeta pyadi
 (env) PS C:\Users\elias\OneDrive\LEAB\cn0565\pyadi-iio>  python -m pip install -r requirements_prod_test.txt
 ```
 
+## 3.7 Instalación de Libiio
+A continuación se debe instalar la siguiente libreria, la cual será utilizada en pasos posteriores para probar la comunicación:
+- archivo instalador: https://github.com/analogdevicesinc/libiio/releases/download/v0.26/libiio-0.26.ga0eca0d2-setup.exe
+
 Si todos estos pasos se cumplieron con éxito estamos en condiciones de establecer conexión con la placa.
 # 4. Pruebas de comunicación con la placa
 ## 4.1. Flasheo y verificación en la consola
@@ -201,7 +205,7 @@ https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/
 - En la primer pestaña seleccionar -> Configuracion -> Seleccionar Baudrate en 115200 -> Seleccionar OK.
 
 - Presionar el boton RESET de la placa ADICUP3029 (ver siguiente imagen)
-  
+  ![](Imagenes%20-%20ADIUCP3029/EVAL-ADICUP3029-Top-web-RESET-BTN.png)
 
 Resultados de la terminal de Tera Term:
 ```Bash
