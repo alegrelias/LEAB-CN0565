@@ -91,6 +91,7 @@ Su potencialidad de realizar EIT, le permite a la plataforma realizar un mapeo d
 # 3. Instalación de aplicaciones necesarias
 El proceso de instalación para el correcto funcionamiento de la placa CN0565 requiere de la configuración e instalación de diversos elementos (programas, librerías, aplicaciones, entre otros). Todo esto puede realizarse desde la secuencia de pasos que se indica a continuación sin la creación de un entorno virtual; no obstante consideramos que las buenas practicas de instalación de una secuencia como la que sigue requieren del mismo. Por lo que a continuación se detalla la instalación con la correspondiente creación de un entorno virtual (NOTA: https://docs.python.org/3/tutorial/venv.html).
 
+NOTA: Si usted ya creo el entorno virtual y solo necesita activarlo diríjase a la sección 3.2 para la siguiente activacion.
 
 ## 3.1 Crear una carpeta del proyecto
 Como paso inicial debe crearse una carpeta desde donde va a realizarse la debida creación del entorno virtual, instalación de las posteriores dependencias y donde se alojarán las carpetas relativas al proyecto. Para acceder al promt donde se ejecutarán las lineas de comando que se indican a continuación se debe ejecutar `cmd` desde la barra de ejecución de windows.
@@ -180,7 +181,7 @@ Pasos a seguir:
 	- Action: Erase
 
 - Presione el boton BOOT de la placa ADICUP3029 (según se muestra la siguiente imagen) y simultáneamente haga click start en la aplicación.
-![[EVAL-ADICUP3029-Top-webBOOT-BTN.png]]
+![](Imagenes%20-%20ADIUCP3029/EVAL-ADICUP3029-Top-web-BOOT-BTN.png)
 
 - Desconectar la ADICUP3029 de la PC
 
@@ -200,7 +201,7 @@ https://wiki.analog.com/_media/resources/eval/user-guides/circuits-from-the-lab/
 - En la primer pestaña seleccionar -> Configuracion -> Seleccionar Baudrate en 115200 -> Seleccionar OK.
 
 - Presionar el boton RESET de la placa ADICUP3029 (ver siguiente imagen)
-  ![[EVAL-ADICUP3029-Top-web-RESET-BTN.png]]
+  
 
 Resultados de la terminal de Tera Term:
 ```Bash
