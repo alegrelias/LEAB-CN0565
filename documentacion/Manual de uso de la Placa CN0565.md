@@ -335,6 +335,7 @@ my_eit = adi.cn0565(uri="serial:COM3,230400")
 ```
 
 Resultados:
+
 ![](Imágenes%20-%20CN0565/resultados%20prueba%20example_single.png)
 
 
