@@ -1,4 +1,8 @@
-- pin selector
-- impedance measure processor
-- measure ALL (Este es de antonio, se encuentra en una de las carpetas en la NUC)
+- pin selector - Autor: Elías Alegre
+- impedance measure processor - Autor: Elías Alegre
+- measure ALL - Autor: Antonio Dell'Osa
 - script comparador de mediciones
+
+Agregar todos los scripts originales de Analog Devices 
+
+Todo con su respectiva información.
